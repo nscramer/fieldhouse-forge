@@ -9,7 +9,8 @@ export const company = {
 
 export const navigation = [
   { href: "/products", label: "Products" },
+  { href: "/products/catalog", label: "Catalog" },
   { href: "/projects", label: "Projects" },
   { href: "/resources", label: "Resources" },
-  { href: "/about", label: "About" },
+  { href: "/company-profile", label: "Company" },
 ] as const;

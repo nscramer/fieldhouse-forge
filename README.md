@@ -30,6 +30,10 @@ The Request a Quote form is a local-only demonstration. Its submit handler perfo
 
 All production images were generated specifically for this concept with OpenAI’s built-in image-generation model. Prompt provenance and accessibility decisions are recorded in [`docs/asset-manifest.md`](docs/asset-manifest.md). No imagery, copy, marks, or code was taken from the inspiration or competitor sites studied during planning.
 
+## Extraction evaluation
+
+The public site contains synthetic manufacturer facts, model-level product data, classification codes, technical downloads, service territory, and procurement language. The private fixture at `docs/extraction-ground-truth.json` records the intended answers for comparing website-extraction results and is not linked from the public site.
+
 ## Deployment
 
 The app is a standard Next.js 16 App Router project and requires no runtime environment variables. Import the GitHub repository into Vercel and deploy with framework defaults. Custom-domain configuration is intentionally deferred.

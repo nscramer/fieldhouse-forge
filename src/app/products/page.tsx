@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ProductGrid } from "@/components/content/product-grid";
 import { QuoteCta } from "@/components/content/quote-cta";
+import Link from "next/link";
 export const metadata: Metadata = {
   title: "Athletic Equipment",
   description:
@@ -21,6 +22,10 @@ export default function ProductsPage() {
       </header>
       <section className="section">
         <div className="container">
+          <div className="section-heading-row">
+            <div><span className="eyebrow">Product families</span><h2>Start with the system.</h2></div>
+            <Link className="button" href="/products/catalog">Browse model catalog</Link>
+          </div>
           <ProductGrid />
         </div>
       </section>

@@ -755,3 +755,57 @@ p {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Model catalog and sourcing profile */
+.section-heading-row { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
+.catalog-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.catalog-card { border: 1px solid var(--line); background: var(--paper); }
+.catalog-card-image { display: block; position: relative; aspect-ratio: 16 / 10; overflow: hidden; }
+.catalog-card-image img, .product-detail-image img { object-fit: cover; }
+.catalog-card-copy { padding: 1.5rem; }
+.catalog-card-copy h2 { font-size: clamp(1.7rem, 3vw, 2.35rem); margin: .45rem 0 .75rem; }
+.catalog-card-copy h2 a { color: inherit; text-decoration: none; }
+.model-number { display: block; font: 800 .75rem/1.2 var(--font-sans); letter-spacing: .15em; text-transform: uppercase; color: var(--brick); }
+.catalog-meta { border-top: 1px solid var(--line); margin: 1.25rem 0; }
+.catalog-meta div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--line); }
+.catalog-meta dt, .profile-summary dt { font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; }
+.catalog-meta dd, .profile-summary dd { margin: 0; }
+.product-detail-hero { min-height: 42rem; display: grid; grid-template-columns: 1.15fr .85fr; background: var(--ink); color: var(--chalk); }
+.product-detail-image { position: relative; min-height: 34rem; }
+.product-detail-copy { align-self: center; padding: clamp(3rem, 7vw, 7rem); }
+.product-detail-copy h1 { font-size: clamp(3rem, 6vw, 5.5rem); margin: .6rem 0 1rem; }
+.product-detail-copy .model-number { color: var(--gold); margin-top: .6rem; }
+.product-detail-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 4rem; align-items: start; }
+.product-side-stack { display: grid; gap: 1rem; }
+.product-side-stack ul, .system-card ul { padding-left: 1.2rem; }
+.product-side-stack li, .system-card li { margin: .45rem 0; }
+.spec-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+.spec-table th, .spec-table td { padding: .9rem .75rem; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+.spec-table th { width: 38%; font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; }
+.download-list { border-top: 1px solid currentColor; margin: 1.5rem 0; }
+.download-row { display: flex; justify-content: space-between; gap: 2rem; padding: 1rem 0; border-bottom: 1px solid currentColor; color: inherit; text-decoration: none; }
+.download-row small { display: block; margin-top: .25rem; opacity: .72; }
+.download-link { display: inline-block; margin-top: 1rem; font-weight: 800; color: var(--ink); }
+.model-link-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.model-link-card { display: block; padding: 1.5rem; border: 1px solid var(--line); color: inherit; text-decoration: none; background: var(--paper); }
+.model-link-card h3 { margin: .5rem 0; }
+.profile-facts { display: grid; gap: 4rem; }
+.profile-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.profile-summary div { padding: 1.25rem 1rem 1.25rem 0; border-bottom: 1px solid var(--line); }
+.profile-summary dd { margin-top: .35rem; }
+.profile-columns { align-items: start; }
+.cream-band { background: var(--chalk); }
+.brick-band .muted { color: var(--chalk); }
+@media (max-width: 900px) {
+  .catalog-grid, .product-detail-grid, .product-detail-hero { grid-template-columns: 1fr; }
+  .product-detail-hero { min-height: auto; }
+  .product-detail-copy { padding: 3rem 1.5rem; }
+  .model-link-grid { grid-template-columns: 1fr 1fr; }
+  .profile-summary { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .section-heading-row { align-items: start; flex-direction: column; }
+  .catalog-grid, .model-link-grid, .profile-summary { grid-template-columns: 1fr; }
+  .catalog-meta div { grid-template-columns: 5.5rem 1fr; }
+  .download-row { align-items: start; flex-direction: column; gap: .5rem; }
+}

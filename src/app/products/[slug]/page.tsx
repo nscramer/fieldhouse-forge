@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { QuoteCta } from "@/components/content/quote-cta";
 import { getProduct, products } from "@/content/products";
 import { resources, resourceDisclaimer } from "@/content/resources";
+import { catalogProducts } from "@/content/catalog";
 export function generateStaticParams() {
   return products.map(({ slug }) => ({ slug }));
 }
@@ -26,6 +27,7 @@ export default async function ProductPage({
   const product = getProduct(slug);
   if (!product) notFound();
   const resource = resources[Number(product.number) % resources.length];
+  const familyProducts = catalogProducts.filter((item) => item.familySlug === product.slug);
   return (
     <>
       <section className="category-hero">
@@ -96,6 +98,16 @@ export default async function ProductPage({
           </div>
         </div>
       </section>
+      {familyProducts.length > 0 && (
+        <section className="section"><div className="container">
+          <span className="eyebrow">Representative models</span><h2>Products in this system.</h2>
+          <div className="model-link-grid">{familyProducts.map((item) => (
+            <Link className="model-link-card" href={`/products/catalog/${item.slug}`} key={item.slug}>
+              <span className="model-number">MODEL {item.model}</span><h3>{item.name}</h3><p>{item.summary}</p><span>View product data →</span>
+            </Link>
+          ))}</div>
+        </div></section>
+      )}
       <section className="section">
         <div className="container">
           <span className="eyebrow">Planning resource</span>
