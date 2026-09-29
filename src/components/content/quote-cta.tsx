@@ -12,8 +12,8 @@ export function QuoteCta({
         <span className="eyebrow">Start with the project</span>
         <h2>{title}</h2>
         <p className="lede">
-          Tell us what the room needs to do. This fictional demo shows how a
-          project inquiry could begin—without sending or storing anything.
+          Tell us what the room needs to do, which systems matter, and where
+          the project stands today.
         </p>
         <Link className="button button-light" href="/request-quote">
           Request a Quote

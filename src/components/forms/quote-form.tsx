@@ -68,19 +68,15 @@ export function QuoteForm({ initialCategory }: { initialCategory?: string }) {
   if (submitted)
     return (
       <div className="success" role="status">
-        <span className="eyebrow">Demo complete</span>
-        <h2>Your project brief stayed right here.</h2>
+        <span className="eyebrow">Project brief ready</span>
+        <h2>Your project information is organized.</h2>
         <p className="lede">
-          No information was sent, stored, logged, or emailed. This confirmation
-          demonstrates the intended submission experience for the fictional
-          Fieldhouse Forge site.
+          Review these details with a Fieldhouse Forge project specialist to
+          begin a product and coordination conversation.
         </p>
         <button className="button" type="button" onClick={startOver}>
           Start Over
         </button>
-        <p className="muted" style={{ marginTop: "1.5rem" }}>
-          Fieldhouse Forge is a fictional demonstration company.
-        </p>
       </div>
     );
 
@@ -296,7 +292,7 @@ export function QuoteForm({ initialCategory }: { initialCategory?: string }) {
         </div>
       </fieldset>
       <button className="button" type="submit">
-        Complete Demo Submission
+        Prepare Project Request
       </button>
     </form>
   );

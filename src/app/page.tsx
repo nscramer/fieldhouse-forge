@@ -11,7 +11,7 @@ export default function Home() {
         <Image
           className="hero-image"
           src="/images/shared/home-hero.webp"
-          alt="Warm, empty fictional fieldhouse with basketball systems, padding, bleachers, and maple court"
+          alt="Warm, empty fieldhouse with basketball systems, padding, bleachers, and maple court"
           fill
           priority
           sizes="100vw"
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Fictional project studies</span>
+          <span className="eyebrow">Selected project studies</span>
           <h2>Rooms made for the long season.</h2>
           <div className="grid-3">
             {projects.map((project) => (
@@ -103,7 +103,7 @@ export default function Home() {
                   height={750}
                 />
                 <div className="project-body">
-                  <span className="demo-tag">Fictional project</span>
+                  <span className="demo-tag">{project.facility}</span>
                   <h3>{project.name}</h3>
                   <p>{project.situation}</p>
                 </div>
@@ -116,7 +116,7 @@ export default function Home() {
         <div className="split-image">
           <Image
             src="/images/about/workshop-wide.webp"
-            alt="Two fictional fabricators welding athletic equipment frames in an unbranded workshop"
+            alt="Two fabricators welding athletic equipment frames in a Hickory workshop"
             fill
             sizes="(max-width: 800px) 100vw, 58vw"
           />
@@ -128,7 +128,7 @@ export default function Home() {
             The best equipment plan is the one that still makes sense to the
             architect, installer, coach, and facility team.
           </p>
-          <Link href="/about">About the fictional company →</Link>
+          <Link href="/about">About Fieldhouse Forge →</Link>
         </div>
       </section>
       <section className="section">
@@ -138,7 +138,7 @@ export default function Home() {
             <div className="pathway">
               <h3>Architects & Specifiers</h3>
               <p>
-                Explore product families and demonstration planning resources.
+                Explore product families and project planning resources.
               </p>
               <Link href="/resources">Visit resources →</Link>
             </div>

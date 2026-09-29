@@ -85,15 +85,14 @@ export default async function ProductPage({
             <h2>One visual language.</h2>
             <p className="lede">
               Foundry Navy, Banner Brick, Maple Gold, and Canvas Cream form a
-              fictional palette for early design conversations.
+              coordinated palette for early design conversations.
             </p>
           </div>
           <div className="notice">
-            <strong>Demonstration content</strong>
+            <strong>Project coordination</strong>
             <p>
-              Colors, configurations, and descriptions shown here are fictional
-              design material—not specifications, product data, or construction
-              guidance.
+              Confirm final colors, configurations, dimensions, and supporting
+              conditions through project-specific submittals.
             </p>
           </div>
         </div>

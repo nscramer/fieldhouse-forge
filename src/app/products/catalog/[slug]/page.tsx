@@ -44,12 +44,11 @@ export default async function CatalogProductPage({ params }: { params: Promise<{
       <section className="section brick-band"><div className="container">
         <span className="eyebrow">Technical library</span><h2>Downloads for early coordination.</h2>
         <div className="download-list">{product.documents.map((document) => (
-          <a href={document.href} className="download-row" key={document.href} download><span><strong>{document.label}</strong><small>{product.model} · demonstration document</small></span><span>{document.type} ↓</span></a>
+          <a href={document.href} className="download-row" key={document.href} download><span><strong>{document.label}</strong><small>{product.model} · technical document</small></span><span>{document.type} ↓</span></a>
         ))}</div>
-        <p className="muted"><small>All product records and documents are fictional demonstration material and are not suitable for construction or purchasing.</small></p>
+        <p className="muted"><small>Confirm final selections, dimensions, structural requirements, and installation conditions through project-specific submittals.</small></p>
       </div></section>
       <QuoteCta title={`Discuss a ${product.model} project configuration.`} />
     </>
   );
 }
-

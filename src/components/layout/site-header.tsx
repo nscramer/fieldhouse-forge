@@ -10,7 +10,6 @@ export function SiteHeader() {
           <span>
             {company.location} · {company.descriptor}
           </span>
-          <span>{company.shortDisclosure}</span>
         </div>
       </div>
       <header className="header">

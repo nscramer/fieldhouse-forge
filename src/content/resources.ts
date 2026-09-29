@@ -3,7 +3,7 @@ export const resources = [
     title: "Fieldhouse Planning Guide",
     category: "Early planning",
     description:
-      "A demonstration outline for defining sports, court use, ceiling zones, seating needs, and equipment storage before design advances.",
+      "A planning outline for defining sports, court use, ceiling zones, seating needs, and equipment storage before design advances.",
     items: [
       "List every scheduled activity",
       "Map overhead conflicts",
@@ -29,7 +29,7 @@ export const resources = [
     title: "Forge Finish Palette",
     category: "Materials",
     description:
-      "An invented finish family showing how powder coat, padding, wood, and resilient surfaces might be discussed together.",
+      "A coordinated finish family for powder coat, padding, wood, and resilient surfaces.",
     items: ["Foundry Navy", "Banner Brick", "Maple Gold", "Canvas Cream"],
     href: "/downloads/fieldhouse-forge-catalog.pdf",
     fileType: "PDF · 9 pages",
@@ -38,7 +38,7 @@ export const resources = [
     title: "Gym Equipment Coordination",
     category: "Court systems",
     description:
-      "A demonstration sequence for reviewing backstops, curtains, volleyball equipment, seating, and storage as one package.",
+      "A coordination sequence for reviewing backstops, curtains, volleyball equipment, seating, and storage as one package.",
     items: [
       "Establish play positions",
       "Confirm folded clearances",
@@ -76,4 +76,4 @@ export const resources = [
 ] as const;
 
 export const resourceDisclaimer =
-  "Sample demonstration resource—not for construction, engineering, installation, maintenance, or safety decisions.";
+  "Planning resource—confirm project-specific requirements with the design team and qualified installers.";

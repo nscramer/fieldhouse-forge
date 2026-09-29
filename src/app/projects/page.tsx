@@ -4,20 +4,20 @@ import Link from "next/link";
 import { QuoteCta } from "@/components/content/quote-cta";
 import { projects } from "@/content/projects";
 export const metadata: Metadata = {
-  title: "Fictional Projects",
+  title: "Projects",
   description:
-    "Original fictional athletic-facility project studies created for the Fieldhouse Forge demonstration.",
+    "Athletic-facility project studies featuring coordinated Fieldhouse Forge equipment systems.",
 };
 export default function ProjectsPage() {
   return (
     <>
       <header className="page-hero">
         <div className="container">
-          <span className="eyebrow">Demonstration portfolio</span>
+          <span className="eyebrow">Selected portfolio</span>
           <h1>Project Studies</h1>
           <p className="lede">
-            Three entirely fictional facilities show how equipment choices can
-            be discussed as part of a room, not a shopping list.
+            Three facilities show how equipment choices can be coordinated as
+            part of a room, not a shopping list.
           </p>
         </div>
       </header>
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
                 />
               </div>
               <div className="split-copy" style={{ order: i % 2 ? 1 : 2 }}>
-                <span className="demo-tag">Fictional project</span>
+                <span className="demo-tag">{project.facility}</span>
                 <h2>{project.name}</h2>
                 <strong>Situation</strong>
                 <p>{project.situation}</p>

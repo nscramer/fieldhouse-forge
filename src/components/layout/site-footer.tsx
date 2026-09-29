@@ -11,7 +11,7 @@ export function SiteFooter() {
               Fieldhouse Forge<small>Hickory, Indiana</small>
             </div>
             <p style={{ marginTop: "1rem", maxWidth: "30rem" }}>
-              A concept manufacturer for the courts, weight rooms, seating, and
+              An equipment manufacturer for the courts, weight rooms, seating, and
               fields that bring public athletic facilities to life.
             </p>
           </div>
@@ -36,11 +36,7 @@ export function SiteFooter() {
             </ul>
           </div>
         </div>
-        <p className="footer-disclosure">
-          {company.disclosure} All institutions, projects, product names, and
-          claims shown on this site are original fictional content created for
-          demonstration purposes.
-        </p>
+        <p className="footer-disclosure">{company.disclosure}</p>
       </div>
     </footer>
   );

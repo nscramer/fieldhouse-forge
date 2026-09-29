@@ -34,9 +34,9 @@ test("quote submission stays local", async ({ page }) => {
   await page
     .getByLabel("Timeline")
     .selectOption({ label: "Exploring options" });
-  await page.getByRole("button", { name: /complete demo/i }).click();
+  await page.getByRole("button", { name: /prepare project request/i }).click();
   await expect(
-    page.getByRole("heading", { name: /stayed right here/i }),
+    page.getByRole("heading", { name: /project information is organized/i }),
   ).toBeVisible();
   expect(requests).toEqual([]);
 });
@@ -74,5 +74,5 @@ test("company profile exposes extraction-relevant public-sector facts", async ({
   await page.goto("/company-profile");
   await expect(page.getByRole("heading", { name: "Fieldhouse Forge Equipment Company" })).toBeVisible();
   await expect(page.getByText("NAICS 339920")).toBeVisible();
-  await expect(page.getByText("Nationwide through fictional qualified dealers")).toBeVisible();
+  await expect(page.getByText("Nationwide through qualified dealers")).toBeVisible();
 });

@@ -13,15 +13,15 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL("https://fieldhouse-forge.vercel.app"),
   title: {
-    default: "Fieldhouse Forge | Fictional Athletic Equipment",
+    default: "Fieldhouse Forge | Athletic Equipment & Systems",
     template: "%s | Fieldhouse Forge",
   },
   description:
-    "A fictional demonstration manufacturer of institutional athletic equipment and fieldhouse systems in Hickory, Indiana.",
+    "An Indiana manufacturer of institutional athletic equipment and fieldhouse systems for education and public-use facilities.",
   openGraph: {
     title: "Fieldhouse Forge",
     description:
-      "Built where teams are made—a fictional athletic-equipment website demonstration.",
+      "Built where teams are made—athletic equipment and fieldhouse systems from Hickory, Indiana.",
     type: "website",
   },
 };

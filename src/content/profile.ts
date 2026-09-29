@@ -1,13 +1,13 @@
 export const companyProfile = {
   legalName: "Fieldhouse Forge Equipment Company",
   tradeName: "Fieldhouse Forge",
-  companyType: "Fictional privately held manufacturer",
+  companyType: "Privately held manufacturer",
   founded: 1978,
   headquarters: "214 Foundry Way, Hickory, Indiana 47300",
   phone: "(888) 555-0142",
   email: "projects@fieldhouseforge.example",
-  facility: "142,000 sq ft fictional fabrication and assembly facility",
-  employees: "Approximately 185 fictional employees",
+  facility: "142,000 sq ft fabrication and assembly facility",
+  employees: "Approximately 185 employees",
   serviceTerritory: [
     "Indiana",
     "Illinois",
@@ -15,7 +15,7 @@ export const companyProfile = {
     "Michigan",
     "Kentucky",
     "Wisconsin",
-    "Nationwide through fictional qualified dealers",
+    "Nationwide through qualified dealers",
   ],
   markets: [
     "K-12 education",
@@ -42,9 +42,7 @@ export const companyProfile = {
     { system: "CSI", code: "11 68 33", label: "Athletic Field Equipment" },
   ],
   procurement: [
-    "Direct project quotation through an authorized fictional dealer",
+    "Direct project quotation through an authorized dealer",
     "Public bid and specification response",
-    "Fictional cooperative contract FF-2026-14 for demo purposes only",
   ],
 } as const;
-

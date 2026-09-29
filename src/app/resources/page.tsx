@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { QuoteCta } from "@/components/content/quote-cta";
 import { resourceDisclaimer, resources } from "@/content/resources";
 export const metadata: Metadata = {
-  title: "Demonstration Resources",
+  title: "Planning Resources",
   description:
-    "Fictional sample planning resources for the Fieldhouse Forge website demonstration.",
+    "Planning and coordination resources for Fieldhouse Forge athletic equipment projects.",
 };
 export default function ResourcesPage() {
   return (
@@ -14,8 +14,8 @@ export default function ResourcesPage() {
           <span className="eyebrow">For early conversations</span>
           <h1>Planning Resources</h1>
           <p className="lede">
-            Original demonstration material showing how a spec-driven supplier
-            might organize useful project guidance.
+            Practical material for early planning, specification coordination,
+            and owner conversations.
           </p>
         </div>
       </header>

@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Athletic Equipment",
   description:
-    "Explore six fictional Fieldhouse Forge athletic equipment families for institutional facilities.",
+    "Explore six Fieldhouse Forge athletic equipment families for institutional facilities.",
 };
 export default function ProductsPage() {
   return (

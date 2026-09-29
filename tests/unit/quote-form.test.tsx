@@ -8,7 +8,7 @@ describe("QuoteForm", () => {
     const user = userEvent.setup();
     render(<QuoteForm />);
     await user.type(screen.getByLabelText(/contact name/i), "Nora Ellis");
-    await user.click(screen.getByRole("button", { name: /complete demo/i }));
+    await user.click(screen.getByRole("button", { name: /prepare project request/i }));
     expect(screen.getByRole("alert")).toHaveFocus();
     expect(screen.getByLabelText(/contact name/i)).toHaveValue("Nora Ellis");
     expect(screen.getAllByText("Enter your work email.")).toHaveLength(2);

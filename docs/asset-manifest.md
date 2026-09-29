@@ -21,6 +21,8 @@ All production images were generated with OpenAI’s built-in image-generation m
 | `catalog/courtcommand-8.webp` | CC-8 catalog record | Describes mounted controls | Fictional eight-function stainless and navy gym control station | Approved |
 | `catalog/centerline-500.webp` | CL-500 catalog record | Describes the complete divider | Fictional navy and cream center-roll divider curtain in an empty fieldhouse | Approved |
 | `catalog/foundry-6.webp` | FR-6 catalog record | Describes rack and storage | Fictional six-post institutional training rack in an unbranded weight room | Approved |
+| `company/team-shop.png` | Company profile | Describes the full shop team | Original eight-person fabrication, engineering, project, and field-service team portrait in the Hickory workshop | Approved |
+| `company/team-planning.png` | Company profile | Describes project coordination | Original four-person project team reviewing plans, material samples, and an equipment mockup | Approved |
 
 The complete structured prompts are recorded in the approved implementation plan. Regenerate rather than patching any asset that later reveals accidental lettering, third-party identity, or implausible equipment.
 
