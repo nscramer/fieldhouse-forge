@@ -5,7 +5,7 @@ import { catalogProducts } from "@/content/catalog";
 
 export const metadata: Metadata = {
   title: "Equipment Catalog",
-  description: "Fictional model-level athletic equipment catalog for specification and sourcing demonstrations.",
+  description: "Model-level athletic equipment catalog for specification, sourcing, and project coordination.",
 };
 
 export default function CatalogPage() {
@@ -13,7 +13,7 @@ export default function CatalogPage() {
     <>
       <header className="page-hero"><div className="container">
         <span className="eyebrow">Model-level equipment</span><h1>Equipment Catalog</h1>
-        <p className="lede">Representative product records with model numbers, applications, specification sections, lead times, and demonstration documents.</p>
+        <p className="lede">Product records with model numbers, applications, specification sections, lead times, and technical documents.</p>
       </div></header>
       <section className="section"><div className="container catalog-grid">
         {catalogProducts.map((product) => (
@@ -38,4 +38,3 @@ export default function CatalogPage() {
     </>
   );
 }
-

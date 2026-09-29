@@ -2,9 +2,7 @@ export const company = {
   name: "Fieldhouse Forge",
   location: "Hickory, Indiana",
   descriptor: "Athletic Equipment & Systems",
-  disclosure:
-    "Fieldhouse Forge is a fictional demonstration company. No products or services are offered for sale.",
-  shortDisclosure: "Fictional demonstration company",
+  disclosure: "Fieldhouse Forge is a fictional company created for demonstration purposes.",
 } as const;
 
 export const navigation = [

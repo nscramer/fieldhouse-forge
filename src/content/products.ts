@@ -190,7 +190,7 @@ export const products: ProductFamily[] = [
       },
     ],
     image: "/images/products/scoreboards-controls.webp",
-    alt: "Fictional arena scoreboard and courtside control console in an empty gym",
+    alt: "Arena scoreboard and courtside control console in an empty gym",
   },
   {
     slug: "outdoor-equipment",

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { QuoteForm } from "@/components/forms/quote-form";
 export const metadata: Metadata = {
-  title: "Request a Quote Demo",
+  title: "Request a Quote",
   description:
-    "Try the local-only fictional Fieldhouse Forge project inquiry flow. No data is sent or stored.",
+    "Organize a Fieldhouse Forge project inquiry around facility needs, schedule, and equipment scope.",
 };
 export default async function RequestQuotePage({
   searchParams,
@@ -15,7 +15,7 @@ export default async function RequestQuotePage({
     <>
       <header className="page-hero">
         <div className="container">
-          <span className="eyebrow">Project inquiry demonstration</span>
+          <span className="eyebrow">Project inquiry</span>
           <h1>Tell Us About the Room.</h1>
           <p className="lede">
             A credible equipment package starts with facility use, project
@@ -27,11 +27,10 @@ export default async function RequestQuotePage({
         <div className="container form-shell">
           <aside>
             <div className="notice">
-              <strong>This is a private, local-only demo.</strong>
+              <strong>Prepare your project brief.</strong>
               <p>
-                Anything you type stays in this browser tab and is discarded
-                when you leave or refresh. The form does not transmit, store,
-                log, email, or otherwise retain your information.
+                Gather the core facility, equipment, schedule, and contact
+                details needed to begin a project conversation.
               </p>
             </div>
             <h2 style={{ marginTop: "2rem" }}>What this brief covers</h2>

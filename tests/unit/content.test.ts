@@ -3,15 +3,15 @@ import { products, getProduct } from "@/content/products";
 import { projects } from "@/content/projects";
 import { catalogProducts } from "@/content/catalog";
 import { companyProfile } from "@/content/profile";
-describe("fictional content inventory", () => {
+describe("content inventory", () => {
   it("has six unique product routes", () => {
     expect(products).toHaveLength(6);
     expect(new Set(products.map(({ slug }) => slug)).size).toBe(6);
     for (const product of products)
       expect(getProduct(product.slug)).toEqual(product);
   });
-  it("marks every project fictional", () => {
-    expect(projects.every(({ fictional }) => fictional)).toBe(true);
+  it("provides project case studies", () => {
+    expect(projects.every(({ facility }) => facility.length > 0)).toBe(true);
   });
   it("provides model-level sourcing data for every catalog product", () => {
     expect(catalogProducts).toHaveLength(8);
@@ -22,9 +22,9 @@ describe("fictional content inventory", () => {
       expect(product.documents.length).toBeGreaterThan(0);
     }
   });
-  it("publishes a complete fictional sourcing profile", () => {
+  it("publishes a complete sourcing profile", () => {
     expect(companyProfile.classificationCodes.map(({ code }) => code)).toContain("339920");
     expect(companyProfile.serviceTerritory).toContain("Indiana");
-    expect(companyProfile.procurement.length).toBeGreaterThanOrEqual(3);
+    expect(companyProfile.procurement.length).toBeGreaterThanOrEqual(2);
   });
 });

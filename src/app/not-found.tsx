@@ -6,8 +6,7 @@ export default function NotFound() {
         <span className="eyebrow">Out of bounds</span>
         <h1>Page not found.</h1>
         <p className="lede">
-          The page you requested is not part of this fictional equipment
-          catalog.
+          The page you requested is not part of the current equipment catalog.
         </p>
         <Link className="button" href="/">
           Return Home

@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-export const alt = "Fieldhouse Forge — fictional athletic equipment company";
+export const alt = "Fieldhouse Forge athletic equipment company";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export default function Image() {
@@ -39,7 +39,7 @@ export default function Image() {
         <span>Forge</span>
       </div>
       <div style={{ fontSize: 28, fontFamily: "sans-serif" }}>
-        Built where teams are made · Fictional demonstration company
+        Built where teams are made · Athletic equipment & systems
       </div>
     </div>,
     size,
