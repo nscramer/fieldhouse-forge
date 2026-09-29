@@ -1,0 +1,225 @@
+export type CatalogProduct = {
+  slug: string;
+  model: string;
+  name: string;
+  familySlug: string;
+  family: string;
+  summary: string;
+  description: string;
+  image: string;
+  alt: string;
+  applications: string[];
+  features: string[];
+  specifications: { label: string; value: string }[];
+  options: string[];
+  csiSection: string;
+  leadTime: string;
+  madeIn: string;
+  documents: { label: string; href: string; type: string }[];
+};
+
+export const catalogProducts: CatalogProduct[] = [
+  {
+    slug: "forgefold-920-backstop",
+    model: "FF-920",
+    name: "ForgeFold 920 Forward-Fold Backstop",
+    familySlug: "gymnasium-systems",
+    family: "Gymnasium Systems",
+    summary: "A ceiling-suspended basketball backstop concept for competition gyms and divisible courts.",
+    description: "The ForgeFold 920 is a fictional, project-configured forward-fold system intended to show the level of coordination expected for overhead athletic equipment. Final attachment height, bracing, loads, controls, and clearances would be engineered for each building.",
+    image: "/images/catalog/forgefold-920.webp",
+    alt: "Fictional navy ceiling-suspended basketball backstop photographed in an empty gym",
+    applications: ["K-12 competition gyms", "Municipal fieldhouses", "College recreation", "Renovation projects"],
+    features: ["Forward-fold operating geometry", "Front-braced mast concept", "Electric winch and key control", "Optional height adjuster", "Powder-coated structural frame"],
+    specifications: [
+      { label: "Backboard", value: "72 x 42 in clear glass concept" },
+      { label: "Attachment height", value: "18-36 ft project-configured" },
+      { label: "Operation", value: "115 V electric winch concept" },
+      { label: "Frame finish", value: "Powder coat, 12 standard colors" },
+      { label: "Estimated ship weight", value: "1,180-1,620 lb by configuration" },
+    ],
+    options: ["Manual or powered height adjustment", "Safety strap monitoring", "Shot-clock support", "Custom frame color"],
+    csiSection: "11 66 23 - Gymnasium Equipment",
+    leadTime: "12-16 weeks after approved submittals",
+    madeIn: "Hickory, Indiana",
+    documents: [
+      { label: "Product data sheet", href: "/downloads/ff-920-product-data.pdf", type: "PDF" },
+      { label: "Sample CSI specification", href: "/downloads/fieldhouse-forge-csi-guide.pdf", type: "PDF" },
+    ],
+  },
+  {
+    slug: "courtcommand-8-control",
+    model: "CC-8",
+    name: "CourtCommand 8 Control Station",
+    familySlug: "scoreboards-controls",
+    family: "Scoreboards & Controls",
+    summary: "A lockable eight-function wall station for coordinated gymnasium equipment operation.",
+    description: "CourtCommand 8 is a fictional control-station concept for backstops, divider curtains, cages, and height adjusters. It demonstrates how control scope, location, labeling, and owner access can be described during design.",
+    image: "/images/catalog/courtcommand-8.webp",
+    alt: "Fictional navy gym equipment control panel mounted beside a maple court",
+    applications: ["Competition gyms", "Multi-court recreation centers", "School fieldhouses"],
+    features: ["Eight labeled control positions", "Maintained-key enable function", "Surface or flush mounting", "Project-specific engraved labels"],
+    specifications: [
+      { label: "Capacity", value: "Up to 8 equipment functions" },
+      { label: "Enclosure", value: "NEMA 1 indoor concept" },
+      { label: "Faceplate", value: "Brushed stainless steel" },
+      { label: "Control voltage", value: "24 V low-voltage concept" },
+    ],
+    options: ["Master enable key", "Custom grouping", "Remote status panel"],
+    csiSection: "11 66 23 - Gymnasium Equipment",
+    leadTime: "8-10 weeks after approved submittals",
+    madeIn: "Hickory, Indiana",
+    documents: [{ label: "Control planning guide", href: "/downloads/gym-coordination-guide.pdf", type: "PDF" }],
+  },
+  {
+    slug: "centerline-500-divider",
+    model: "CL-500",
+    name: "CenterLine 500 Divider Curtain",
+    familySlug: "gymnasium-systems",
+    family: "Gymnasium Systems",
+    summary: "A center-roll divider curtain concept for separating simultaneous court programs.",
+    description: "The CenterLine 500 combines an opaque lower curtain with an open-mesh upper section and a motorized center-roll tube. It is represented as a custom-sized system coordinated with structure, lighting, sprinklers, and equipment travel paths.",
+    image: "/images/catalog/centerline-500.webp",
+    alt: "Fictional navy and cream center-roll gym divider curtain in a bright fieldhouse",
+    applications: ["Divisible school gyms", "Community recreation", "Multi-court practice facilities"],
+    features: ["Center-roll operating concept", "Vinyl lower and mesh upper construction", "Weighted lower edge", "Keyed wall control"],
+    specifications: [
+      { label: "Maximum concept width", value: "120 ft" },
+      { label: "Maximum concept height", value: "35 ft" },
+      { label: "Lower material", value: "18 oz reinforced vinyl concept" },
+      { label: "Upper material", value: "Open polyester mesh concept" },
+    ],
+    options: ["Walk-draw access panel", "Custom lower color", "Printed court identifier"],
+    csiSection: "11 66 23 - Gymnasium Equipment",
+    leadTime: "10-14 weeks after field verification",
+    madeIn: "Hickory, Indiana",
+    documents: [{ label: "Gym coordination guide", href: "/downloads/gym-coordination-guide.pdf", type: "PDF" }],
+  },
+  {
+    slug: "varsity-300-volleyball",
+    model: "V-300",
+    name: "Varsity 300 Volleyball System",
+    familySlug: "gymnasium-systems",
+    family: "Gymnasium Systems",
+    summary: "A competition volleyball package with posts, winch, padding, sleeves, and storage cart.",
+    description: "Varsity 300 is a fictional institutional volleyball package developed as a complete changeover system rather than a loose collection of accessories.",
+    image: "/images/products/gymnasium-systems.webp",
+    alt: "Fictional competition volleyball system installed in an unbranded gymnasium",
+    applications: ["High school competition", "College recreation", "Municipal courts"],
+    features: ["Telescoping aluminum posts", "Geared net winch", "Full-height post padding", "Rolling storage cart"],
+    specifications: [
+      { label: "Post construction", value: "4 in aluminum extrusion concept" },
+      { label: "Height settings", value: "Competition and junior settings" },
+      { label: "Floor sleeves", value: "Project-selected by floor assembly" },
+      { label: "Package storage", value: "Rolling two-post cart" },
+    ],
+    options: ["Center standard", "Judge stand", "Custom padding color"],
+    csiSection: "11 66 23 - Gymnasium Equipment",
+    leadTime: "6-8 weeks",
+    madeIn: "Hickory, Indiana",
+    documents: [{ label: "Product data sheet", href: "/downloads/fieldhouse-forge-catalog.pdf", type: "PDF" }],
+  },
+  {
+    slug: "foundry-6-rack",
+    model: "FR-6",
+    name: "Foundry 6 Training Rack",
+    familySlug: "strength-conditioning",
+    family: "Strength & Conditioning",
+    summary: "A six-post institutional rack with integrated plate, bar, and accessory storage.",
+    description: "The Foundry 6 is a fictional floor-anchored training rack for supervised school and municipal performance rooms. Its footprint and storage strategy are designed to support repeatable room planning.",
+    image: "/images/catalog/foundry-6.webp",
+    alt: "Fictional navy six-post institutional weight training rack in a clean studio setting",
+    applications: ["High school weight rooms", "College team training", "Public performance centers"],
+    features: ["Six-post frame", "Numbered adjustment positions", "Integrated plate horns", "Two vertical bar holders", "Multi-grip pull-up bar"],
+    specifications: [
+      { label: "Footprint", value: "78 W x 96 D x 96 H in" },
+      { label: "Uprights", value: "3 x 3 in, 11 ga steel concept" },
+      { label: "Hole spacing", value: "2 in with 1 in bench-zone spacing" },
+      { label: "Anchoring", value: "Four-point floor anchoring required" },
+      { label: "Unit weight", value: "690 lb concept" },
+    ],
+    options: ["Half-rack connector", "Band pegs", "Technique trays", "Custom identification plate"],
+    csiSection: "11 66 53 - Gymnasium and Exercise Equipment",
+    leadTime: "8-12 weeks",
+    madeIn: "Hickory, Indiana",
+    documents: [
+      { label: "Strength room planning guide", href: "/downloads/fieldhouse-forge-catalog.pdf", type: "PDF" },
+    ],
+  },
+  {
+    slug: "foundry-platform-8",
+    model: "FP-8",
+    name: "Foundry Platform 8",
+    familySlug: "strength-conditioning",
+    family: "Strength & Conditioning",
+    summary: "An eight-foot lifting platform concept with maple center deck and replaceable rubber tiles.",
+    description: "Foundry Platform 8 is represented as a modular institutional platform that can be coordinated with racks, room flooring, and circulation zones.",
+    image: "/images/products/strength-conditioning.webp",
+    alt: "Fictional maple and rubber lifting platform in an institutional weight room",
+    applications: ["School performance centers", "Team training rooms", "Municipal fitness"],
+    features: ["Maple center deck", "Replaceable rubber impact tiles", "Beveled steel perimeter", "Rack-integrated option"],
+    specifications: [
+      { label: "Footprint", value: "96 x 96 in" },
+      { label: "Overall thickness", value: "2.5 in concept" },
+      { label: "Center deck", value: "Sealed maple veneer concept" },
+      { label: "Impact zones", value: "1.5 in recycled-rubber tile concept" },
+    ],
+    options: ["School-color perimeter", "Custom center graphic", "Rack-integrated frame"],
+    csiSection: "11 66 53 - Gymnasium and Exercise Equipment",
+    leadTime: "6-8 weeks",
+    madeIn: "Hickory, Indiana",
+    documents: [{ label: "Catalog entry", href: "/downloads/fieldhouse-forge-catalog.pdf", type: "PDF" }],
+  },
+  {
+    slug: "endwall-2-padding",
+    model: "EW-2",
+    name: "EndWall 2 Impact Padding",
+    familySlug: "padding-surfaces",
+    family: "Padding & Surfaces",
+    summary: "A two-inch wall-padding concept for court perimeters, stages, and exposed columns.",
+    description: "EndWall 2 is a fictional field-measured panel system showing how padding layout, attachment, graphics, and transitions can be coordinated with the architecture.",
+    image: "/images/products/padding-surfaces.webp",
+    alt: "Fictional brick-red wall padding installed beside a maple gym floor",
+    applications: ["Gym end walls", "Stage fronts", "Columns near play", "Training rooms"],
+    features: ["Field-measured panel layout", "Z-clip attachment concept", "Wrapped inside and outside corners", "Optional digitally printed graphics"],
+    specifications: [
+      { label: "Nominal panel size", value: "24 W x 72 H in" },
+      { label: "Nominal thickness", value: "2 in" },
+      { label: "Core", value: "Resilient foam over wood substrate concept" },
+      { label: "Facing", value: "16 oz vinyl concept" },
+    ],
+    options: ["Custom heights", "Column pads", "Graphics package", "Removable access panels"],
+    csiSection: "11 66 23 - Gymnasium Equipment",
+    leadTime: "6-10 weeks after field verification",
+    madeIn: "Hickory, Indiana",
+    documents: [{ label: "Sample CSI specification", href: "/downloads/fieldhouse-forge-csi-guide.pdf", type: "PDF" }],
+  },
+  {
+    slug: "summit-24-soccer-goal",
+    model: "SG-24",
+    name: "Summit 24 Soccer Goal",
+    familySlug: "outdoor-equipment",
+    family: "Outdoor Equipment",
+    summary: "A full-size aluminum soccer goal concept for school and municipal fields.",
+    description: "Summit 24 is a fictional semi-permanent goal package with a welded face frame, demountable ground frame, net, and anchoring kit selected for the field condition.",
+    image: "/images/products/outdoor-equipment.webp",
+    alt: "Fictional full-size aluminum soccer goal on an empty community athletic field",
+    applications: ["High school soccer", "Municipal complexes", "Shared-use fields"],
+    features: ["Welded aluminum face frame", "Demountable ground frame", "White powder-coat finish", "Net and anchoring package"],
+    specifications: [
+      { label: "Opening", value: "24 W x 8 H ft" },
+      { label: "Face frame", value: "4 in round aluminum concept" },
+      { label: "Goal depth", value: "8 ft at base" },
+      { label: "Net", value: "4 in square braided polyethylene concept" },
+    ],
+    options: ["Rear transport wheels", "Different anchoring packages", "Replacement net"],
+    csiSection: "11 68 33 - Athletic Field Equipment",
+    leadTime: "5-7 weeks",
+    madeIn: "Hickory, Indiana",
+    documents: [{ label: "Catalog entry", href: "/downloads/fieldhouse-forge-catalog.pdf", type: "PDF" }],
+  },
+];
+
+export function getCatalogProduct(slug: string) {
+  return catalogProducts.find((product) => product.slug === slug);
+}

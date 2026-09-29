@@ -9,6 +9,8 @@ export const resources = [
       "Map overhead conflicts",
       "Reserve changeover and storage zones",
     ],
+    href: "/downloads/fieldhouse-forge-catalog.pdf",
+    fileType: "PDF · 9 pages",
   },
   {
     title: "Architect Coordination Checklist",
@@ -20,6 +22,8 @@ export const resources = [
       "Coordinate controls and power",
       "Review access and service paths",
     ],
+    href: "/downloads/gym-coordination-guide.pdf",
+    fileType: "PDF · 3 pages",
   },
   {
     title: "Forge Finish Palette",
@@ -27,6 +31,8 @@ export const resources = [
     description:
       "An invented finish family showing how powder coat, padding, wood, and resilient surfaces might be discussed together.",
     items: ["Foundry Navy", "Banner Brick", "Maple Gold", "Canvas Cream"],
+    href: "/downloads/fieldhouse-forge-catalog.pdf",
+    fileType: "PDF · 9 pages",
   },
   {
     title: "Gym Equipment Coordination",
@@ -38,6 +44,8 @@ export const resources = [
       "Confirm folded clearances",
       "Plan control locations",
     ],
+    href: "/downloads/fieldhouse-forge-csi-guide.pdf",
+    fileType: "PDF · 3 pages",
   },
   {
     title: "Strength Room Worksheet",
@@ -49,6 +57,8 @@ export const resources = [
       "Mark coaching sightlines",
       "Keep storage close to use",
     ],
+    href: "/downloads/fieldhouse-forge-catalog.pdf",
+    fileType: "PDF · 9 pages",
   },
   {
     title: "Maintenance Conversation Starter",
@@ -60,6 +70,8 @@ export const resources = [
       "Document owner procedures",
       "Schedule qualified reviews",
     ],
+    href: "/downloads/gym-coordination-guide.pdf",
+    fileType: "PDF · 3 pages",
   },
 ] as const;
 

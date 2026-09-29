@@ -1,0 +1,29 @@
+{
+  "purpose": "Private evaluation fixture for comparing profiles extracted from the public demonstration website.",
+  "company": {
+    "legal_name": "Fieldhouse Forge Equipment Company",
+    "trade_name": "Fieldhouse Forge",
+    "company_type": "Fictional privately held manufacturer",
+    "founded": 1978,
+    "headquarters_city": "Hickory",
+    "headquarters_state": "Indiana",
+    "manufacturing_location": "Hickory, Indiana",
+    "facility_square_feet": 142000,
+    "employee_count_approximate": 185,
+    "markets": ["K-12 education", "Higher education", "Municipal recreation", "Parks and public athletic complexes", "Community and nonprofit facilities"],
+    "direct_service_states": ["Indiana", "Illinois", "Ohio", "Michigan", "Kentucky", "Wisconsin"],
+    "national_coverage": "Through fictional qualified dealers"
+  },
+  "classification_codes": [
+    { "system": "NAICS", "code": "339920" },
+    { "system": "UNSPSC", "code": "49221500" },
+    { "system": "CSI", "code": "11 66 23" },
+    { "system": "CSI", "code": "11 66 53" },
+    { "system": "CSI", "code": "11 68 33" }
+  ],
+  "product_families": ["Gymnasium Systems", "Strength & Conditioning", "Seating", "Padding & Surfaces", "Scoreboards & Controls", "Outdoor Equipment"],
+  "models": ["FF-920", "CC-8", "CL-500", "V-300", "FR-6", "FP-8", "EW-2", "SG-24"],
+  "download_types": ["equipment catalog", "product data", "sample CSI guide", "coordination guide"],
+  "procurement_routes": ["authorized fictional dealer", "public bid and specification response", "fictional cooperative contract"],
+  "negative_facts": { "real_public_contracts": false, "real_certifications": false, "online_checkout": false, "quote_form_transmits_data": false }
+}

@@ -35,6 +35,9 @@ export default function ResourcesPage() {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
+                <a className="download-link" href={resource.href} download>
+                  Download {resource.fileType} ↓
+                </a>
                 <p className="muted">
                   <small>{resourceDisclaimer}</small>
                 </p>

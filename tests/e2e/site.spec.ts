@@ -49,6 +49,8 @@ test("representative pages have no serious axe violations", async ({
     "/projects",
     "/resources",
     "/about",
+    "/company-profile",
+    "/products/catalog/forgefold-920-backstop",
     "/request-quote",
   ]) {
     await page.goto(path);
@@ -60,4 +62,17 @@ test("representative pages have no serious axe violations", async ({
       path,
     ).toEqual([]);
   }
+});
+test("catalog exposes model-level sourcing details and downloads", async ({ page }) => {
+  await page.goto("/products/catalog/forgefold-920-backstop");
+  await expect(page.getByRole("heading", { name: "ForgeFold 920 Forward-Fold Backstop" })).toBeVisible();
+  await expect(page.getByText("MODEL FF-920")).toBeVisible();
+  await expect(page.getByText("11 66 23 - Gymnasium Equipment")).toBeVisible();
+  await expect(page.getByRole("link", { name: /Product data sheet/ })).toHaveAttribute("href", "/downloads/ff-920-product-data.pdf");
+});
+test("company profile exposes extraction-relevant public-sector facts", async ({ page }) => {
+  await page.goto("/company-profile");
+  await expect(page.getByRole("heading", { name: "Fieldhouse Forge Equipment Company" })).toBeVisible();
+  await expect(page.getByText("NAICS 339920")).toBeVisible();
+  await expect(page.getByText("Nationwide through fictional qualified dealers")).toBeVisible();
 });
