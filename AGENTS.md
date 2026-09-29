@@ -1,3 +1,11 @@
+# Fieldhouse Forge contributor notes
+
+- Keep every company, institution, project, product name, and claim fictional.
+- Do not add third-party logos, school marks, testimonials, or borrowed copy and imagery.
+- Preserve the visible fictional-company disclosure and local-only quote behavior.
+- The quote form must never send, store, log, or persist visitor input.
+- Use the text wordmark “Fieldhouse Forge”; do not introduce a logo or mascot.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know
